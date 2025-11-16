@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mockup web dengan Word</title> <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<div id="wrapper">
+    <header>
+        <img src="images/Header.png">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="indeks.php">Beranda</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Profil</a>
+                <ul class="submenu">
+                    <li><a href="#">Hub Kami</a></li>
+                    <li><a href="#">Tentang kami</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <article>
+        <div class="full-article">
+            <h2>Mockup web dengan Word</h2> <img src="images/content2.png" alt="Mockup Web" class="article-image">
+            
+            <p>Ini adalah halaman untuk menampilkan artikel "Mockup web dengan Word" secara lengkap. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+
+            <p>Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Integer pharetra magna non ante blandit lobortis.</p>
+        </div>
+    </article>
+
+    <aside>
+        <ul>
+            <li class="widget">
+                <h2>Berita Populer</h2>
+                <ul>
+                    <li><a href="#">Belajar Web dengan HTML+CSS3</a></li>
+                    <li><a href="#">Mockup web dengan Word</a></li>
+                    <li><a href="#">Disain Web Statis</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+    <footer>
+        <div id="column">
+            <h2>LAYANAN</h2>
+            E-Mail<br>
+            E-Learning<br>
+            E-Repository<br>
+        </div>
+        <div id="column">
+            <h2>Business Hour</h2>
+            Silahkan hubungi pusbangnis UINSU.
+        </div>
+        <div id="column">
+            <h2>Head Office</h2>
+            Jl. Willem Iskandar, Medan.
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

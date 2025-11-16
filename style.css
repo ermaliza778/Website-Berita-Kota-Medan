@@ -1,0 +1,291 @@
+body {
+    background-color: #F0F0F0;
+    padding: 25px 0;
+}
+
+/* Bagian Awal & Header */
+#wrapper {
+    width: 960px;
+    margin: auto;
+    overflow: auto;
+    background-color: #FFFFFF;
+    border: 2px solid #CCCCCC; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 5px; 
+}
+
+header {
+    height: 120px;
+    width: 960px;
+    background: url(images/headerr2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    background-color: #FFFFFF;
+}
+
+/* Navigasi (SUDAH DIPERBAIKI) */
+nav {
+    height: 40px;
+    width: 958px;
+    float: left;
+    background: #FF0000;
+    border: #AAAAAA 1px solid;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li {
+    float: left;
+    position: relative; 
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    line-height: 20px;
+    color: #E0FFFF;
+    text-decoration: none;
+    border-right: #AAAAAA 1px solid;
+}
+
+nav ul li a:hover {
+    background: #EDEDED;
+    color: #333;
+}
+
+/* Submenu */
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 40px; 
+    left: 0;
+    width: 150px;
+    border: #AAAAAA 1px solid;
+    background: #DFDFDF;
+    z-index: 100;
+    padding: 0;
+}
+
+nav ul li:hover > .submenu {
+    display: block;
+}
+
+nav ul .submenu li {
+    display: block;
+    width: 100%;
+    float: none;
+}
+
+nav ul .submenu li a {
+    color: #333;
+    border-right: none;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+nav ul .submenu li:last-child a {
+    border-bottom: none;
+}
+
+nav ul .submenu li a:hover {
+    background: #BD6;
+    color: #093;
+}
+
+
+/* Artikel (Kontainer Utama) */
+#wrapper article {
+    width: 620px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* == 1. Style untuk Homepage (index.php) == */
+#wrapper article #single {
+    margin: 4px;
+    border: #DFDFDF 1px solid;
+    padding: 4px;
+    font-size: 13px;
+    float: left;
+    overflow: auto;
+    text-align: justify;
+    background-color: #FFFFFF;
+}
+
+#wrapper article #single p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+#wrapper article #single #t-images {
+    width: 130px;
+    height: 120px;
+    float: left;
+    overflow: auto;
+    margin-right: 5px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper article #single h2 {
+    margin: 0px;
+    font-family: Tahoma;
+    font-size: 18px;
+    padding: 5px;
+    border: #DFDFDF 1px solid;
+    background: #FFFFE0;
+}
+
+#wrapper article #single #more a {
+    float: right;
+    overflow: auto;
+    border: #FF9933 1px solid;
+    background: #FFF8DC;
+    padding: 2px 10px 2px 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#wrapper article #single #more a:hover {
+    background: #BD6;
+    color: #093;
+    border: #CC6600 1px solid;
+}
+
+
+/* == 2. Style untuk Halaman Konten (content.php, profil.php) == */
+.full-article {
+    border: 1px solid #DFDFDF;
+    padding: 15px;
+    font-size: 14px;
+    overflow: auto;
+    text-align: justify;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+.full-article h2 {
+    margin-top: 0;
+}
+.full-article .article-image {
+    width: 40%;
+    max-width: 550px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* == 3. Style untuk Halaman Arsip (artikel.php) == */
+.arsip-artikel {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.arsip-artikel li {
+    border-bottom: 1px solid #eee;
+    padding: 1px 10px;
+}
+.arsip-artikel li:last-child {
+    border-bottom: none;
+}
+.arsip-artikel li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+.arsip-artikel li a:hover {
+    color: #FF0000;
+}
+.arsip-artikel li span {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+/* Sidebar (Aside) */
+#wrapper aside {
+    width: 300px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#wrapper aside .widget {
+    list-style: none;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+#wrapper aside .widget h2 {
+    margin-top: 0;
+}
+
+#wrapper aside .widget ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+#wrapper aside .widget li a {
+    text-decoration: none;
+    color: #800000;
+}
+
+#wrapper aside .widget li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (INI KODE YANG HILANG DI TEMPAT KAMU) */
+footer {
+    width: 960px;
+    float: left;
+    background: #333333; /* <-- INI YANG MEMBUAT ABU-ABU */
+    color: #BBBBBB;
+    padding: 10px 0; 
+    
+    /* INI YANG MEMBUAT POSISINYA BENAR DI BAWAH */
+    clear: both;
+}
+
+footer #column {
+    width: 300px;
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+footer #column h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-family: Tahoma;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+footer #column a {
+    color: #0099CC;
+    text-decoration: none;
+}
+
+footer #column a:hover {
+    text-decoration: underline;
+}
